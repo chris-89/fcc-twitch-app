@@ -1,0 +1,83 @@
+//COLOURS
+$blue: steelblue;
+$shadow: rgba(0,0,0, .4);
+$red: red;
+$green: green;
+//
+
+//WIDTHS
+$colWidth: 600px;
+//
+.user-tile {
+
+    box-shadow: 0px 0px 6px 1px $shadow;
+    cursor: pointer;
+    margin-bottom: 25px;
+    padding: 25px;
+    &:hover {
+        box-shadow: 0px 0px 10px 1px $shadow;
+    }
+    .col {
+    display: inline-block;
+    float: left;
+    }
+
+    [class^='row'] {
+        width: 600px;
+    }
+    [class$='count'] {
+        padding: 0 15px;
+    }
+    .online {
+        color: $green;
+    }
+    .offline {
+        color: $red;
+    }
+    .row-1 {
+        height: 50px;
+        .user-logo {
+            height: 50px;
+            width: 50px;
+            img {
+                height: 100%;
+                width: 100%;
+                }
+        }
+    .user-details {
+        height: 100%;
+        padding: 5px 50px;
+        width: 500px;
+    }
+    .user-status {
+        font-size: .8rem;
+        padding-top: 5px;
+        height: 30px;
+        overflow: hidden;
+    }
+    .online-status {
+        font-size: .7rem;
+        text-align: right;
+        height: 100%;
+        position: relative;
+        width: 50px;
+    }
+}
+    .row-2 {
+        height: 35px;
+        padding: 17px 10px 17px 20px;
+        .col {
+            line-height: 35px;
+        }
+    }
+    .fa-heart {
+        color: $red;
+    }
+    .fa-eye {
+        color: $blue;
+    }
+    .expand {
+        float: right;
+        text-align: right;
+    }
+}

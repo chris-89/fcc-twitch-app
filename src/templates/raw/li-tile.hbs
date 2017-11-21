@@ -1,0 +1,38 @@
+<a href='{{url}}' target='_blank'>
+    <li class='user-tile'>
+        <div class='row-1'>
+            <div class='col user-logo'>
+                <img src= {{logo}}>
+            </div>
+            <div class='col user-details'>
+                <div class='display-name'>
+                    <p>{{display_name}}</p>
+                </div>
+                <div class='user-status'>
+                    <p>{{status}}</p>
+                </div>
+            </div>
+            <div class='col online-status'>
+                <p class='{{active}}'>{{active}}</p>
+            </div>
+        </div>
+        <div class='row-2'>
+            <div class='col likes'>
+                <div class='col likes-icon'>
+                    <i class='fa fa-heart'></i>
+                </div>
+                <div class='col likes-count'>
+                    <p>{{followers}}</p>
+                </div>
+            </div>
+            <div class='col views'>
+                <div class='col views-icon'>
+                    <i class='fa fa-eye fa-lg'></i>
+                </div>
+                <div class='col views-count'>
+                    <p>{{views}}</p>
+                </div>
+            </div>
+        </div>
+    </li>
+</a>
